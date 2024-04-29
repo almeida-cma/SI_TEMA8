@@ -1,0 +1,4 @@
+sensor_temperatura=ar_condicionado
+fumaça=ligar_luzes
+movimento=ligar_alarme
+porta_aberta=fechar_porta
