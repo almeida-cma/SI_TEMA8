@@ -60,6 +60,13 @@
         return rand(0, 1); // Retorna 0 (não acionado) ou 1 (acionado)
     }
 
+	//ATIVIDADE
+	 function verificarSensorVazamentoAgua() {
+        // Implemente a lógica real para verificar o sensor de porta aberta aqui
+        // Neste exemplo, vamos simular que o sensor é acionado aleatoriamente
+        return rand(0, 1); // Retorna 0 (não acionado) ou 1 (acionado)
+    }
+
     // Função para ler as regras do arquivo
     function lerRegras() {
         $regras = [];
@@ -115,6 +122,11 @@
     // Verifica se o sensor de porta aberta foi acionado
     if (verificarSensorPortaAberta()) {
         $sensores_acionados[] = 'porta_aberta';
+    }
+	
+	// ATIVIDADE
+    if (verificarSensorVazamentoAgua()) {
+        $sensores_acionados[] = 'vazamento_agua';
     }
 
     // Se algum sensor foi acionado, exibe a mensagem
